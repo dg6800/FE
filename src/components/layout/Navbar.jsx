@@ -11,7 +11,7 @@ const Navbar = () => {
   
   
     const goToLogin = () => {
-       navigate('/signin');
+       navigate('/login');
     }
   
   return (

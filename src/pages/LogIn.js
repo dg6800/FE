@@ -29,7 +29,7 @@ function Copyright(props) {
 
 const theme = createTheme();
 
-function SignIn() {
+function LogIn() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -56,7 +56,7 @@ function SignIn() {
               <LockOutlinedIcon />
             </Avatar>
             <Typography component="h1" variant="h5">
-              Sign in
+              로그인 페이지
             </Typography>
             <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
               <TextField
@@ -108,4 +108,4 @@ function SignIn() {
   );
 }
 
-export default SignIn;
+export default LogIn;
