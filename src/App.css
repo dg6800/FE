@@ -1,38 +1,26 @@
-.App {
-  text-align: center;
-}
+# FE
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+#TEST COMMIT
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+#해야할일
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+- slice namimg
+- configStore naming
+- Page -> Router 정리
 
-.App-link {
-  color: #61dafb;
-}
+component
+-common - header(nav bar)
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+-main page
+<header/>
+
+#페이지 순서
+
+1. 메인페이지
+2. 로그인/회원가입
+   3-1. 롤링페이지(메인)
+   3-1-1. 롤링페이지 세부(팬명록형식)
+
+3-2. 정보공유 페이지
+3-2-1.(정보공유 페이지 리스트 클릭시)세부페이지
+3-2-2. 작성페이지
