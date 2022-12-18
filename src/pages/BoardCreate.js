@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const BoardWrite = () => {
+const BoardCreate = () => {
     return (
         <div>
             <input></input>
@@ -9,4 +9,4 @@ const BoardWrite = () => {
     );
 };
 
-export default BoardWrite;
+export default BoardCreate;
