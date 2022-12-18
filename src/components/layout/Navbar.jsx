@@ -6,38 +6,41 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Navbar = () => {
-  const menuList = ['정보방', '롤링페이퍼']
-  
     const navigate = useNavigate();
 
 
     const goToHome = () => {
       navigate('/');
     }
-  
     const goToLogin = () => {
       navigate('/login');
     }
+    const goToBoards = () => {
+      navigate('/boards')
+    }
+    const goToRolling = () => {
+      navigate('/rolling')
+    }
+
   
   return (
-    <div>
+    <NavBoxWrap>
       <FirstNavBox>
         <LogoBox onClick={goToHome}>
           <LogoImg src='img/logo.png'/>
         </LogoBox>
         <LoginBox onClick={goToLogin}>
           <div><FontAwesomeIcon icon={faUser} /></div>
-          <div>로그인</div>
+          {/* <div>로그인</div> */}
         </LoginBox>
       </FirstNavBox>
       <NavArea>
         <NavBox>
-          {menuList.map((menu) => (
-            <NavList>{menu}</NavList>
-          ))}
+            <NavList onClick={goToBoards}>정보방</NavList>
+            <NavList onClick={goToRolling}>롤링페이퍼</NavList>
         </NavBox>
       </NavArea>
-    </div>
+    </NavBoxWrap>
 );
 };
 
@@ -55,7 +58,6 @@ const FirstNavBox = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
 `
 
 const LoginBox = styled.div`
@@ -70,9 +72,19 @@ const NavBox = styled.div`
 
 const NavList = styled.div`
   padding: 10px;
+  cursor: pointer;
+  &:hover{
+    text-decoration: underline;
+    text-decoration-color:#8F1919;
+  }
 `
 
 const NavArea = styled.div`
   display: flex;
   justify-content: flex-end;
+  
+`
+
+const NavBoxWrap = styled.div`
+  margin: 20px 10px;
 `
