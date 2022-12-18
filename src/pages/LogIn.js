@@ -10,7 +10,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Link, useNavigate } from 'react-router-dom';
-
+import styled from 'styled-components';
 
 
 
@@ -79,14 +79,14 @@ function LogIn({setAuthenticate}) {
               </Button>
               <Grid container>
                 <Grid item xs>
-                  <Link href="#" variant="body2">
+                  <StLink href="#" variant="body2">
                     회원탈퇴
-                  </Link>
+                  </StLink>
                 </Grid>
                 <Grid item>
-                  <Link to={`/signup`} variant="body2">
+                  <StLink to={`/signup`} variant="body2">
                     {'회원가입'}
-                  </Link>
+                  </StLink>
                 </Grid>
               </Grid>
             </Box>
@@ -100,3 +100,9 @@ function LogIn({setAuthenticate}) {
 }
 
 export default LogIn;
+
+
+const StLink = styled(Link)`
+  text-decoration: none;
+
+`
