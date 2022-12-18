@@ -1,16 +1,17 @@
 import React, {useEffect, useState} from 'react';
-
-import {ListGroup, Badge} from 'react-bootstrap'
-
-
+import {ListGroup, Badge, ToggleButton} from 'react-bootstrap'
+import { useNavigate } from 'react-router-dom';
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 
 const Board = () => {
+    const navigate = useNavigate();
     const [boardList, setBoardList] = useState([]);
-
+    const [checked, setChecked] = useState(false);
 
     const getBoards= async() => {
-        let url = `http://localhost:5000/boards`;
+        let url = `http://localhost:3001/boards`;
         let response = await fetch(url);
         let data = await response.json();
         console.log(data);
@@ -21,8 +22,27 @@ const Board = () => {
         getBoards();
     },[]);
 
+    const goTowrite = () => {
+        navigate('/board-create')
+      }
+
 
     return (
+    <>
+        <ButtonArea>
+            <ToggleButton
+                className="mb-2"
+                id="toggle-check"
+                type="checkbox"
+                variant="outline-danger"
+                checked={checked}
+                value="1"
+                onChange={(e) => setChecked(e.currentTarget.checked)}
+                onClick={goTowrite}
+            >
+                작성하기
+            </ToggleButton>
+        </ButtonArea>
         <ListGroup as="ol" numbered>
             {boardList.map((list)=> (
                 <ListGroup.Item
@@ -31,7 +51,9 @@ const Board = () => {
                 >
                     <div className="ms-2 me-auto">
                         <div className="fw-bold flex " >
+                            <EachLink to = {`/boards/${list.id}`}>
                             {list.title}
+                            </EachLink>
                         </div>
                     </div>
                         
@@ -41,14 +63,23 @@ const Board = () => {
                 </ListGroup.Item>
             ))}
         </ListGroup>
+    </>
     );
 };
 
 export default Board;
 
 
+const ButtonArea = styled.div`
+    display: flex;
+        justify-content: flex-end;
+        margin: 40px 0 20px 0;
+`
 
-
+const EachLink = styled(Link)`
+    text-decoration: none;
+    color: black;
+`
 
 
 
