@@ -5,6 +5,9 @@ import LogIn from '../pages/LogIn';
 import SignUp from '../pages/SignUp';
 import Board from '../pages/Boards';
 import Navbar from '../components/layout/Navbar';
+import BoardCreate from '../pages/BoardCreate'
+import Rolling from '../pages/Rolling';
+import BoardDetail from '../pages/BoardDetail';
 
 
 //1. 메인페이지, 로그인페이지, 정보공유 메인페이지,(o)
@@ -29,7 +32,11 @@ const Router = () => {
                 <Route path="/" element={<Main />} />
                 <Route path="/login" element={<LogIn setAuthenticate={setAuthenticate}/>} />
                 <Route path="/signup" element={<SignUp />} />
-                <Route path="/board" element={<Board />} />
+                <Route path="/board-create" element={<BoardCreate />} />
+                <Route path="/boards" element={<Board />} />
+                <Route path="/boards/:id" element={<BoardDetail/>} />
+                <Route path="/rollingpapers" element={<Rolling />} />
+                
             </Routes>
         </BrowserRouter> 
     );
