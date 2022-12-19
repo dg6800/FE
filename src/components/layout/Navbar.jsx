@@ -13,13 +13,13 @@ const Navbar = () => {
       navigate('/');
     }
     const goToLogin = () => {
-      navigate('/login');
+      navigate('/api/users/login');
     }
     const goToBoards = () => {
-      navigate('/boards')
+      navigate('/api/boards/main')
     }
     const goToRolling = () => {
-      navigate('/rolling')
+      navigate('/api/rollingpapers/:id')
     }
 
   

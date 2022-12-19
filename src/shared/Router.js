@@ -31,13 +31,13 @@ const Router = () => {
             <Navbar/>
             <Routes>
                 <Route path="/" element={<Main />} />
-                <Route path="/login" element={<LogIn setAuthenticate={setAuthenticate}/>} />
-                <Route path="/signup" element={<SignUp />} />
-                <Route path="/board-create" element={<BoardCreate />} />
-                <Route path="/boards" element={<Board />} />
-                <Route path="/boards/:id" element={<BoardDetail/>} />
-                
-                <Route path="/s" element={<Rolling />} />
+                <Route path="/api/users/login" element={<LogIn setAuthenticate={setAuthenticate}/>} />
+                <Route path="/api/users/signup" element={<SignUp />} />
+                <Route path="/api/boards" element={<BoardCreate />} />
+                <Route path="/api/boards/main" element={<Board />} />
+                <Route path="/api/boards/:id" element={<BoardDetail/>} />
+                <Route path="/api/boards/:id" element={<BoardDetail/>} />
+                <Route path="/api/rollingpapers" element={<Rolling />} />
                 
                 
                 
