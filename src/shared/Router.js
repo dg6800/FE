@@ -10,6 +10,7 @@ import Rolling from '../pages/Rolling';
 import BoardDetail from '../pages/BoardDetail';
 
 
+
 //1. 메인페이지, 로그인페이지, 정보공유 메인페이지,(o)
 // 네이게이션 바 만들거임.(o)
 //2. 메인페이지에서는 로그인 페이지와 회원가입 페이지로 가는 버튼이 있다. (o)
@@ -35,7 +36,10 @@ const Router = () => {
                 <Route path="/board-create" element={<BoardCreate />} />
                 <Route path="/boards" element={<Board />} />
                 <Route path="/boards/:id" element={<BoardDetail/>} />
-                <Route path="/rollingpapers" element={<Rolling />} />
+                
+                <Route path="/s" element={<Rolling />} />
+                
+                
                 
             </Routes>
         </BrowserRouter> 

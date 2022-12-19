@@ -68,3 +68,6 @@ useEffect(() => {
   );
 };
 export default BoardCreate;
+
+
+//https://react-bootstrap.netlify.app/forms/form-control/
