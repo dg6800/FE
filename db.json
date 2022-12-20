@@ -1,32 +1,53 @@
 {
   "boards": [
     {
-      "id":1,
+      "id": 1,
       "user": "강혜지",
-      "title":"spring꿀팁!",
+      "title": "spring꿀팁!",
       "content": "가루가되어라!",
-      "img":"https://lp2.hm.com/hmgoepprod?set=source[/ec/ef/ecef9d77c56c519e24a76b83331ae2c18f73f50d.jpg],origin[dam],category[],type[LOOKBOOK],res[y],hmver[1]&call=url[file:/product/main]"
-  },
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/ec/ef/ecef9d77c56c519e24a76b83331ae2c18f73f50d.jpg],origin[dam],category[],type[LOOKBOOK],res[y],hmver[1]&call=url[file:/product/main]"
+    },
     {
-      "id":1,
+      "id": 2,
       "user": "양승우",
-      "title":"react 매니저님이 주신 꿀팁!",
+      "title": "react 매니저님이 주신 꿀팁!",
       "content": "열심히하기",
-      "img":"https://lp2.hm.com/hmgoepprod?set=source[/ec/ef/ecef9d77c56c519e24a76b83331ae2c18f73f50d.jpg],origin[dam],category[],type[LOOKBOOK],res[y],hmver[1]&call=url[file:/product/main]"
-  },
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/ec/ef/ecef9d77c56c519e24a76b83331ae2c18f73f50d.jpg],origin[dam],category[],type[LOOKBOOK],res[y],hmver[1]&call=url[file:/product/main]"
+    },
     {
-      "id":1,
+      "id": 3,
       "user": "장신원",
-      "title":"안보면 후회하는 리액트 공부법",
+      "title": "안보면 후회하는 리액트 공부법",
       "content": "나 따라하기",
-      "img":"https://lp2.hm.com/hmgoepprod?set=source[/ec/ef/ecef9d77c56c519e24a76b83331ae2c18f73f50d.jpg],origin[dam],category[],type[LOOKBOOK],res[y],hmver[1]&call=url[file:/product/main]"
-  },
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/ec/ef/ecef9d77c56c519e24a76b83331ae2c18f73f50d.jpg],origin[dam],category[],type[LOOKBOOK],res[y],hmver[1]&call=url[file:/product/main]"
+    },
     {
-      "id":1,
+      "id": 4,
       "user": "최수빈",
-      "title":"리액트 TIL",
+      "title": "리액트 TIL",
       "content": "링크.",
-      "img":"https://lp2.hm.com/hmgoepprod?set=source[/ec/ef/ecef9d77c56c519e24a76b83331ae2c18f73f50d.jpg],origin[dam],category[],type[LOOKBOOK],res[y],hmver[1]&call=url[file:/product/main]"
-  }
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/ec/ef/ecef9d77c56c519e24a76b83331ae2c18f73f50d.jpg],origin[dam],category[],type[LOOKBOOK],res[y],hmver[1]&call=url[file:/product/main]"
+    },
+    {
+      "title": "혜지",
+      "content": "화이팅",
+      "img": "https://image.bugsm.co.kr/album/images/500/202860/20286013.jpg",
+      "id": 5
+    },
+    {
+      "title": "추가",
+      "content": "하기",
+      "img": "https://image.bugsm.co.kr/album/images/500/202860/20286013.jpg",
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8,
+      "title": "하루가",
+      "content": "뒤숭숭",
+      "img": "https://image.bugsm.co.kr/album/images/500/202860/20286013.jpg"
+    }
   ]
 }
