@@ -5,14 +5,14 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 const initialState = {
-    cooment: [],
-    boards: [],
-    isLoading: false,
-    error: null,
-    };
+  comment: [],
+  boards: [],
+  isLoading: false,
+  error: null,
+};
 
 export const __addBoard = createAsyncThunk(
-    "addBoard",
+  "addBoard",
 
   async (payload, thunkAPI) => {
     await axios.post("http://localhost:3001/boards", payload);
@@ -68,7 +68,9 @@ export const __getBoardById = createAsyncThunk(
     console.log("payload", payload);
     // const data는 Promise를 반환
     try {
-      const data = await axios.get(`http://localhost:3001/boards?id=${payload}`);
+      const data = await axios.get(
+        `http://localhost:3001/boards?id=${payload}`
+      );
 
       console.log("data", data.data);
       return thunkAPI.fulfillWithValue(data.data);
